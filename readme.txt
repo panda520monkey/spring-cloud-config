@@ -1,1 +1,1 @@
-这是springcloud的配置中心
+这是springcloud的配置中心不错
