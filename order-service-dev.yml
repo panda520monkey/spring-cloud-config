@@ -19,6 +19,9 @@ eureka:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
       #拉取注册信息间隔时间
     registry-fetch-interval-seconds: 30
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
 feign:
   hystrix:
     enabled: true
